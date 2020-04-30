@@ -36,7 +36,7 @@ insert into oauth_client_details (
 )
 values (
   'mobile', null, '$2y$12$YMjmzVvIwaHsq3V2Xyl/6egjIInf86GFBqGcJjgYv3TYbsRMYNe2W',
-  'READ,WRITE', 'password', null, null,
+  'READ,WRITE', 'password,refresh_token', null, null,
   60 * 60 * 6, 60 * 24 * 60 * 60, null
 );
 
@@ -48,6 +48,6 @@ insert into oauth_client_details (
 )
 values (
   'appweb', null, '$2y$12$YMjmzVvIwaHsq3V2Xyl/6egjIInf86GFBqGcJjgYv3TYbsRMYNe2W',
-  'READ,WRITE', 'authorization_code', 'http://localhost:8080', null,
+  'READ,WRITE', 'authorization_code,refresh_token', 'http://localhost:8080', null,
   null, null, null
 );
