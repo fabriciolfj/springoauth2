@@ -15,5 +15,7 @@ keytool -genkeypair -alias teste -keyalg RSA -keypass 123456 -keystore teste.jks
 ```
 - Chave publica
 ```
+keytool -export -rfc -alias teste -keystore teste.jks -file teste-cert.pem
+
 openssl x509 -pubkey -noout -in teste-cert.pem > teste-pkey.pem
 ```
